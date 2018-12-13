@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RealWordModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Article">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Author" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="likeNumber" Type="Int32" />
+    <Property Name="ArticleContent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TAG" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="RealWordEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Article" EntityType="Self.Article" />
+    <EntitySet Name="JWT" EntityType="RealWordModel.JWT" />
+  </EntityContainer>
+  <EntityType Name="JWT">
+    <Key>
+      <PropertyRef Name="Secret" />
+    </Key>
+    <Property Name="Secret" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>
