@@ -6,6 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="a0a04a00da9d4debab5d39e99c5bd85d" Name="Diagram1">
         <EntityTypeShape EntityType="RealWordModel.Article" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RealWordModel.JWT" Width="1.5" PointX="3.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

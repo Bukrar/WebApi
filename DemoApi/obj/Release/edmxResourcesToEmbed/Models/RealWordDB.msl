@@ -14,5 +14,12 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="JWT">
+      <EntityTypeMapping TypeName="RealWordModel.JWT">
+        <MappingFragment StoreEntitySet="JWT">
+          <ScalarProperty Name="Secret" ColumnName="Secret" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

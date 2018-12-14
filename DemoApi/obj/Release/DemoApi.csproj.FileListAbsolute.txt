@@ -74,3 +74,13 @@ D:\DemoApi\DemoApi\bin\System.Web.Cors.dll
 D:\DemoApi\DemoApi\bin\System.Web.Http.Cors.dll
 D:\DemoApi\DemoApi\bin\System.Web.Http.Cors.xml
 D:\DemoApi\DemoApi\bin\zh-Hant\EntityFramework.SqlServer.resources.dll
+D:\DemoApi\DemoApi\bin\jose-jwt.dll
+D:\DemoApi\DemoApi\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\DemoApi\DemoApi\bin\Microsoft.IdentityModel.Logging.dll
+D:\DemoApi\DemoApi\bin\Microsoft.IdentityModel.Tokens.dll
+D:\DemoApi\DemoApi\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
+D:\DemoApi\DemoApi\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\DemoApi\DemoApi\bin\Microsoft.IdentityModel.Logging.pdb
+D:\DemoApi\DemoApi\bin\Microsoft.IdentityModel.Logging.xml
+D:\DemoApi\DemoApi\bin\Microsoft.IdentityModel.Tokens.pdb
+D:\DemoApi\DemoApi\bin\Microsoft.IdentityModel.Tokens.xml

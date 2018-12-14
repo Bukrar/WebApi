@@ -14,6 +14,14 @@
     <Property Name="ArticleContent" Type="nvarchar(max)" />
     <Property Name="TAG" Type="nvarchar(max)" />
   </EntityType>
+  <!--產生期間發現錯誤:
+警告 6002: 資料表/檢視 'RealWord.dbo.JWT' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。-->
+  <EntityType Name="JWT">
+    <Key>
+      <PropertyRef Name="Secret" />
+    </Key>
+    <Property Name="Secret" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
   <EntityContainer Name="RealWordModelStoreContainer">
     <EntitySet Name="Article" EntityType="Self.Article" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 
@@ -25,6 +33,11 @@
     [Article].[ArticleContent] AS [ArticleContent], 
     [Article].[TAG] AS [TAG]
     FROM [dbo].[Article] AS [Article]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="JWT" EntityType="Self.JWT" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [JWT].[Secret] AS [Secret]
+    FROM [dbo].[JWT] AS [JWT]</DefiningQuery>
     </EntitySet>
   </EntityContainer>
 </Schema>

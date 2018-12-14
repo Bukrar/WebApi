@@ -14,5 +14,12 @@
   </EntityType>
   <EntityContainer Name="RealWordEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Article" EntityType="Self.Article" />
+    <EntitySet Name="JWT" EntityType="RealWordModel.JWT" />
   </EntityContainer>
+  <EntityType Name="JWT">
+    <Key>
+      <PropertyRef Name="Secret" />
+    </Key>
+    <Property Name="Secret" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

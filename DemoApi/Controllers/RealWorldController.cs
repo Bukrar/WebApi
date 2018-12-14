@@ -17,7 +17,7 @@ namespace DemoApi.Controllers
 
         [JwtAuthActionFilter]
         [HttpGet]
-        [EnableCors(origins: "http://localhost:83", headers: "*", methods: "*")]
+        [EnableCors(origins: "http://localhost:83,http://localhost:4200", headers: "*", methods: "*")]
         public IHttpActionResult GetAll()
         {          
             var rs = _realWordService.GetAll();
